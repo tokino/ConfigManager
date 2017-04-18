@@ -7,9 +7,9 @@
  */
 return array(
     'App' => array(
-        'debug' => false,
+        'debug' => true,
     ),
     'Mail' => array(
-        'to' => '',
+        'to' => 'test',
     ),
 );

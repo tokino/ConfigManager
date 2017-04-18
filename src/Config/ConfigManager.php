@@ -46,7 +46,7 @@ class ConfigManager
                 throw new \Exception('Invalid config file is: ' . $config);
             }
 
-            static::$config = array_merge(static::$config, require_once $file);
+            static::$config = array_replace_recursive(static::$config, require_once $file);
         }
     }
 

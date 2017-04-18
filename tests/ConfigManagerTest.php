@@ -8,9 +8,10 @@
 
 
 use Tokino\Config\ConfigManager;
+use PHPUnit\Framework\TestCase;
 
 
-class ConfigManagerTest extends PHPUnit_Framework_TestCase
+class ConfigManagerTest extends TestCase
 {
     public function testLoad() {
         ConfigManager::load();
